@@ -44,6 +44,8 @@ Each time a user clicks a counter your app should send a ```PUT``` request off t
 
 ```PUT '/counters/:id'``` accepts nested attributes as ```counter[count_by]```.
 
+Params should be sent as ```x-www-form-url-encoded```
+
 The count by value can be positive or negative number
 
 Be sure to reset your counter state after the ```PUT``` resolves so that the data the user sees is always in line with your source of truth, the server data.
